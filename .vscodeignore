@@ -5,5 +5,7 @@
 # ... except these:
 !.vscodeignore
 !package.json
-!LICENSE
 !out/**
+!sublime-merge.png
+!README.md
+!LICENSE

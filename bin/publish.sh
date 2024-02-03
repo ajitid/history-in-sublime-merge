@@ -2,6 +2,6 @@
 
 source .env
 
-npx vsce publish patch --yarn -p $VS_MARKETPLACE_PAT
+npx vsce publish patch -p $VS_MARKETPLACE_PAT
 git push --follow-tags
-npx ovsx publish --yarn -p $OPEN_VSX_PAT
+npx ovsx publish -p $OPEN_VSX_PAT
