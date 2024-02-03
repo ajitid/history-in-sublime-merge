@@ -39,36 +39,6 @@
         "category": "Sublime Merge"
       }
     ],
-    "menus": {
-      "explorer/context": [
-        {
-          "command": "history-in-sublime-merge.viewFileHistory",
-          "group": "YourGroup@1"
-        },
-        {
-          "command": "history-in-sublime-merge.viewLineHistory",
-          "group": "YourGroup@2"
-        },
-        {
-          "command": "history-in-sublime-merge.blameFile",
-          "group": "YourGroup@3"
-        }
-      ],
-      "editor/context": [
-        {
-          "command": "history-in-sublime-merge.viewFileHistory",
-          "group": "YourGroup@1"
-        },
-        {
-          "command": "history-in-sublime-merge.viewLineHistory",
-          "group": "YourGroup@2"
-        },
-        {
-          "command": "history-in-sublime-merge.blameFile",
-          "group": "YourGroup@3"
-        }
-      ]
-    },
     "configuration": [
       {
         "title": "History in Sublime Merge",
