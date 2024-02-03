@@ -1,17 +1,17 @@
 {
   "name": "history-in-sublime-merge",
   "displayName": "History in Sublime Merge",
-  "version": "1.2.18",
+  "version": "1.0.0",
   "description": "Open files in Sublime Merge",
   "categories": [
     "SCM Providers"
   ],
-  "repository": "https://github.com/adhamu/history-in-sublime-merge.git",
+  "repository": "https://github.com/ajitid/history-in-sublime-merge.git",
   "license": "MIT",
   "author": {
-    "name": "adhamu"
+    "name": "ajitid"
   },
-  "publisher": "adhamu",
+  "publisher": "ajitid",
   "main": "./out/extension.js",
   "scripts": {
     "compile": "tsc -p ./",
