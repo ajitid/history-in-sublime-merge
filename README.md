@@ -1,50 +1,39 @@
-# History In Sublime Merge
+# Sublime Merge ✕ VS Code
 
-[![Version](https://img.shields.io/visual-studio-marketplace/v/adhamu.history-in-sublime-merge.svg?style=for-the-badge)](https://marketplace.visualstudio.com/items?itemName=adhamu.history-in-sublime-merge)
-[![Installs](https://img.shields.io/visual-studio-marketplace/i/adhamu.history-in-sublime-merge.svg?style=for-the-badge)](https://marketplace.visualstudio.com/items?itemName=adhamu.history-in-sublime-merge)
-[![Downloads](https://img.shields.io/visual-studio-marketplace/d/adhamu.history-in-sublime-merge.svg?style=for-the-badge)](https://marketplace.visualstudio.com/items?itemName=adhamu.history-in-sublime-merge)
-[![Open VSX Downloads](https://img.shields.io/open-vsx/dt/adhamu/history-in-sublime-merge.svg?color=green&label=Open%20VSX&style=for-the-badge)](https://open-vsx.org/extension/adhamu/history-in-sublime-merge)
+[![Version](https://img.shields.io/visual-studio-marketplace/v/ajitid.sublime-merge-x.svg?style=for-the-badge)](https://marketplace.visualstudio.com/items?itemName=ajitid.sublime-merge-x)
+[![Installs](https://img.shields.io/visual-studio-marketplace/i/ajitid.sublime-merge-x.svg?style=for-the-badge)](https://marketplace.visualstudio.com/items?itemName=ajitid.sublime-merge-x)
+[![Downloads](https://img.shields.io/visual-studio-marketplace/d/ajitid.sublime-merge-x.svg?style=for-the-badge)](https://marketplace.visualstudio.com/items?itemName=ajitid.sublime-merge-x)
+[![Open VSX Downloads](https://img.shields.io/open-vsx/dt/ajitid/sublime-merge-x.svg?color=green&label=Open%20VSX&style=for-the-badge)](https://open-vsx.org/extension/ajitid/sublime-merge-x)
 
-Adds Sublime Merge commands to VSCode/VSCodium.
-
-To differentiate between other Sublime Merge plugins, this one isn't concerned with what workspace (multi or single) you have setup.
-
-Whatever file you have open, it will traverse up the directory structure and find the appropriate `.git` repository.
+Launch contextual aware Sublime Merge commands from VS Code.
 
 ## Features
 
+You can launch these commands from command palette:
+
 - View File History
 - View Line History
-- Blame File
-
-### Command Palette
-
-![Command Palette](https://raw.githubusercontent.com/adhamu/history-in-sublime-merge/master/command-palette.png)
-
-### Explorer Context Menu
-
-![Explorer Context Menu](https://raw.githubusercontent.com/adhamu/history-in-sublime-merge/master/explorer-context.png)
-
-### Editor Context Menu
-
-![Editor Context Menu](https://raw.githubusercontent.com/adhamu/history-in-sublime-merge/master/editor-context.png)
-
-All commands are available in the Command Palette and Context Menus for the Explorer and Editor.
+- Blame Line
+- Open Repository
 
 ## Installation
 
 ```sh
-ext install adhamu.history-in-sublime-merge
+ext install ajitid.sublime-merge-x
 ```
 
 ## Requirements
 
 Ensure the `smerge` command is in your `$PATH`.
 
-[Details can be found here](https://www.sublimemerge.com/docs/command_line)
+Details can be [found here](https://www.sublimemerge.com/docs/command_line)
 
 ## Settings
 
-### `history-in-sublime-merge.path`
+### `sublime-merge-x.path`
 
-Edit this value to override the path to Sublime Merge. When not set, the default path, depending on the operating system, is used.
+Path to Sublime Merge (smerge) command. If not set, the extension will check your `$PATH` instead to find it.
+
+## Thanks
+
+- [Amit Dhamu](https://github.com/adhamu/sublime-merge-x) for creating the original extension
