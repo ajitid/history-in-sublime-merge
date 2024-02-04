@@ -36,7 +36,9 @@ Path to Sublime Merge (smerge) command. If not set, the extension will check you
 
 ## Notes
 
-You can make "Open in Editor…" in Sublime Merge to open VS Code. To do that, first open your terminal and run `code -v`. If it prints anything, great! Otherwise, open command palette using ctrl+shift+p (or cmd+shift+p on a Mac) and search for "Shell Command: Install 'code' command in PATH" and run it. Then, open Sublime Merge and Preferences › Edit Settings… and type in:
+You can make "Open in Editor…" in Sublime Merge to open VS Code. To do that, first open your terminal and run `code -v`. If it prints anything, great! Otherwise, open command palette using ctrl+shift+p (or cmd+shift+p on a Mac) and search for "Shell Command: Install 'code' command in PATH" and run it.
+
+Then, open Sublime Merge and Preferences › Edit Settings… and type in:
 
 ```json
 {
