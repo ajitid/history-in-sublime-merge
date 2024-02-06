@@ -43,7 +43,8 @@ Then, open Sublime Merge and Preferences › Edit Settings… and type in:
 ```json
 {
   "editor_path": "code",
-  "editor_argument_format": "--goto ${file}:${line}:${col}"
+  "editor_argument_format": "--goto ${file}:${line}:${col}",
+  "editor_wait_args": "--wait"
 }
 ```
 
