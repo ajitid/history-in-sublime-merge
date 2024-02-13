@@ -1,7 +1,7 @@
 {
   "name": "sublime-merge-x",
   "displayName": "Sublime Merge X",
-  "version": "0.1.4",
+  "version": "0.1.6",
   "description": "Launch contextual aware Sublime Merge commands from VS Code.",
   "categories": [
     "SCM Providers"
