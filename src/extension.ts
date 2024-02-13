@@ -40,10 +40,10 @@ const openSublimeMerge = (args: string[], repository: string): void => {
 };
 
 const getFileDetails = async (editor: vscode.TextEditor): Promise<FileDetails> => {
-  const repository: string = await getCurrentRepository(editor.document.uri.path);
+  const repository: string = await getCurrentRepository(editor.document.uri.fsPath);
 
   return {
-    path: editor.document.uri.path.replace(`${repository}/`, ""),
+    path: path.relative(repository, editor.document.uri.fsPath),
     cursorLine: editor.selection.active.line + 1,
     selectionStartLine: editor.selection.start.line + 1,
     selectionEndLine: editor.selection.end.line + 1,
@@ -91,9 +91,9 @@ const openRepository: AsyncFn = async () => {
   const workspaces = vscode.workspace.workspaceFolders;
 
   if (vscode.window.activeTextEditor) {
-    repository = await getCurrentRepository(vscode.window.activeTextEditor.document.uri.path);
+    repository = await getCurrentRepository(vscode.window.activeTextEditor.document.uri.fsPath);
   } else if (workspaces?.length) {
-    repository = await getCurrentRepository(workspaces[0].uri.path);
+    repository = await getCurrentRepository(workspaces[0].uri.fsPath);
   } else {
     return Promise.reject(
       "Can't open repository in Sublime Merge as there is no folder or a file open here."
