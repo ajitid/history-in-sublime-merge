@@ -52,4 +52,4 @@ Then, open Sublime Merge and Preferences › Edit Settings… and type in:
 
 ## Thanks
 
-- [Amit Dhamu](https://github.com/adhamu/sublime-merge-x) for creating the original extension
+- [Amit Dhamu](https://github.com/adhamu/history-in-sublime-merge) for creating the original extension
